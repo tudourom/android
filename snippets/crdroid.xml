@@ -2,25 +2,6 @@
 <manifest>
 
   <!-- crDroid additions -->
-  <project path="android" name="crdroidandroid/android" remote="crdroid" />
-
-  <project path="art" name="crdroidandroid/android_art" remote="crdroid" />
-
-  <project path="bionic" name="crdroidandroid/android_bionic" remote="crdroid" />
-
-  <project path="build/make" name="crdroidandroid/android_build" remote="crdroid" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/soong" name="crdroidandroid/android_build_soong" remote="crdroid" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
 
   <project path="device/lineage/sepolicy" name="crdroidandroid/android_device_crdroid_sepolicy" remote="crdroid" />
 
@@ -35,7 +16,6 @@
   <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" remote="crdroid" />
 
   <project path="frameworks/av" name="crdroidandroid/android_frameworks_av" remote="crdroid" />
-  <project path="frameworks/base" name="crdroidandroid/android_frameworks_base" remote="crdroid" />
   <project path="frameworks/native" name="crdroidandroid/android_frameworks_native" remote="crdroid" />
 
   <project path="libcore" name="crdroidandroid/android_libcore" remote="crdroid" />
@@ -66,13 +46,4 @@
   <project path="system/sepolicy" name="crdroidandroid/android_system_sepolicy" remote="crdroid" />
 
   <project path="vendor/addons" name="crdroidandroid/android_vendor_addons" remote="crdroid" />
-  <project path="vendor/crDroidOTA" name="crdroidandroid/android_vendor_crDroidOTA" remote="crdroid" />
-  <project path="vendor/lineage" name="crdroidandroid/android_vendor_crdroid" remote="crdroid" />
-####sdhz152####
-  <project path="packages/providers/PhoneLocationProvider" remote="github" revision="8.1.x" name="sdhz151/android_packages_provider_PhoneLocationProvider" />
-  <project path="external/suda/SudaSDKs" remote="github" revision="8.1.x" name="sdhz151/android_external_suda_SudaSDKs" />
-  <project path="packages/services/Telecomm" name="sdhz152/android_packages_services_Telecomm" remote="github" revision="lineage-15.1" />
-  <project path="packages/apps/Dialer" name="sdhz152/android_packages_apps_Dialer" remote="github" revision="lineage-15.1" />
-  <project path="packages/apps/Messaging" name="sdhz152/android_packages_apps_Messaging" remote="github" revision="lineage-15.1" />
-  <project path="packages/apps/Contacts" name="sdhz152/android_packages_apps_Contacts" remote="github" revision="lineage-15.1" />
 </manifest>
