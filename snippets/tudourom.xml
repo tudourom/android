@@ -24,6 +24,7 @@
   <project path="frameworks/base" name="tudourom/android_frameworks_base" remote="crdroid" />
   <project path="vendor/lineage" name="tudourom/android_vendor_crdroid" remote="crdroid" />
   <project path="vendor/crDroidOTA" name="tudourom/android_vendor_crDroidOTA" remote="crdroid" />
+  <project path="packages/apps/crDroidSettings" name="tudourom/android_packages_apps_crDroidSettings" remote="crdroid" />
 
 ####tudourom####
   <project path="packages/providers/PhoneLocationProvider" remote="github" revision="8.1.x" name="tudourom/android_packages_provider_PhoneLocationProvider" />
